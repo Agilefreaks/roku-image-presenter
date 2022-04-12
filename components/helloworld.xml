@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<component name="HelloWorld" extends="Scene"> 
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name = "HelloWorld" extends = "Scene"> 
 	<children>
-      <Label id="myLabel" 
-      	text="Hello World!"
-      	width="1280" 
-      	height="720" 
-      	horizAlign="center"
-      	vertAlign="center"
+	  <Poster id = "myPoster" />
+      <Label id = "myLabel" 
+      	text = "Hello World!"
+      	width = "1280" 
+      	height = "720" 
+      	horizAlign = "center"
+      	vertAlign = "center"
       	/>
     </children>
-<!-- BrightScript Portion -->
-<script type="text/brightscript" uri="helloworld.brs" />
-<!-- End of BrightScript Portion -->
+<script type = "text/brightscript" uri = "helloworld.brs" />
 </component>
