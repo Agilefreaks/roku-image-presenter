@@ -15,7 +15,7 @@ sub callTask()
   m.apiTask.control = "RUN"
 end sub
 
-function getContent(content)
+sub getContent(content as Object)
   contentData = content.getData()
   ? contentData.GetChildCount()
-end function
+end sub

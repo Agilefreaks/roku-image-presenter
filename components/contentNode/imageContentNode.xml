@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <component  name = "imageContentNode" extends = "ContentNode" >
-<interface >
-    <field id = "id" type = "int" />
-    <field id = "title" type = "string" />
-    <field id = "url" type = "string" />
-    <field id = "image_1080_url" type = "string" />
-    <field id = "description" type = "string" />
-</interface>
+    <interface >
+        <field id = "id" type = "int" />
+        <field id = "title" type = "string" />
+        <field id = "url" type = "string" />
+        <field id = "image_1080_url" type = "string" />
+        <field id = "description" type = "string" />
+    </interface>
 </component>
