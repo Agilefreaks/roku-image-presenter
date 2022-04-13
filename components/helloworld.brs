@@ -15,7 +15,9 @@ sub callTask()
   m.apiTask.control = "RUN"
 end sub
 
-sub getContent(content as Object)
+sub getContent(event as Object)
   contentData = content.getData()
+  ' to-do: search getData()
   ? contentData.GetChildCount()
+  ' to-do: print all data
 end sub
