@@ -1,23 +1,22 @@
 <?xml version = "1.0" encoding = "utf-8" ?>
 <component name = "HelloWorld" extends = "Scene"> 
 	<children>
-	  <Poster id = "myPoster" />
-      <Label id = "myLabel" 
-      	text = "Image Presenter"
-      	width = "1280" 
-      	height = "720" 
-      	horizAlign = "center"
-      	vertAlign = "top"
+	    <Poster id = "myPoster" />
+        <Label id = "myLabel" 
+      		text = "Image Presenter"
+      		width = "1280" 
+      		height = "720" 
+      		horizAlign = "center"
+      		vertAlign = "top"
       	/>
-        <Label 
-            id = "description"
+        <Label id = "description"
             width = "1280"
             height = "720"
             horizAlign = "center"
             vertAlign = "center"
             text = "DESCRIPTION"	
-         />
-		 <RowList id = "RowList"
+        />
+		<RowList id = "RowList"
             visible = "true"
 		    translation = "[200, 300]"
             itemSize = "[1020, 225]"
@@ -25,8 +24,7 @@
 		    rowItemSpacing="[[20, 0]]"
             showRowLabel = "true"
             rowLabelOffset = "[[20, 20]]"
-
-            />
+        />
     </children>
 <script type = "text/brightscript" uri = "helloworld.brs" />
 </component>
