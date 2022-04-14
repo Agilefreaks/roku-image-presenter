@@ -1,14 +1,43 @@
 <?xml version = "1.0" encoding = "utf-8" ?>
 <component name = "HelloWorld" extends = "Scene"> 
+	<interface>
+		<field id = "rowItemSelected"
+        type = "intarray"
+        alwaysnotify = "true"
+        alias = "RowList.rowItemSelected" />
+    <field id = "itemFocused"
+        type = "intarray"
+        alias = "RowList.rowItemFocused"
+        onChange = "OnItemFocused" />
+
+	</interface>
 	<children>
 	  <Poster id = "myPoster" />
       <Label id = "myLabel" 
-      	text = "Hello World!"
+      	text = "Image Presenter"
       	width = "1280" 
       	height = "720" 
       	horizAlign = "center"
-      	vertAlign = "center"
+      	vertAlign = "top"
       	/>
+        <Label 
+            id = "description"
+            width = "1280"
+            height = "720"
+            horizAlign = "center"
+            vertAlign = "center"
+            text = "DESCRIPTION"	
+         />
+		 <RowList id = "RowList"
+            visible = "true"
+		    translation = "[200, 300]"
+            itemSize = "[1020, 225]"
+            rowItemSize="[[400, 225]]"
+		    rowItemSpacing="[[20, 0]]"
+            showRowLabel = "true"
+            rowLabelOffset = "[[20, 20]]"
+
+            />
     </children>
 <script type = "text/brightscript" uri = "helloworld.brs" />
 </component>
