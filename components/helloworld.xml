@@ -1,16 +1,5 @@
 <?xml version = "1.0" encoding = "utf-8" ?>
 <component name = "HelloWorld" extends = "Scene"> 
-	<interface>
-		<field id = "rowItemSelected"
-        type = "intarray"
-        alwaysnotify = "true"
-        alias = "RowList.rowItemSelected" />
-    <field id = "itemFocused"
-        type = "intarray"
-        alias = "RowList.rowItemFocused"
-        onChange = "OnItemFocused" />
-
-	</interface>
 	<children>
 	  <Poster id = "myPoster" />
       <Label id = "myLabel" 
