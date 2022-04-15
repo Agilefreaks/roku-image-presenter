@@ -46,5 +46,6 @@ sub itemFocusChanged(item as Object)
   itemFocused = item.getData()
   ? itemFocused[m.ColumnIndex]
   rowChild = m.RowList.content.getChild(0).getChild(itemFocused[m.ColumnIndex])
-  m.myDescription.text = rowChild.Description
+  m.myDescription.text = rowChild.description
+  m.myPoster.uri = rowChild.HDPosterUrl
 end sub
